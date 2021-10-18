@@ -130,3 +130,110 @@
         break;
     }
   ?>
+  
+  <?php
+    $colors = array ('赤', '青', '黄');
+    
+    echo $colors[0];
+    
+    $colors[] = '白';
+    
+    echo $colors[3];
+    
+  ?>
+  
+  <?php
+
+    for ($i = 51; $i <= 100; $i++) {
+      echo $i;
+      echo '<br>';
+    }
+
+  ?>
+  
+  <?php
+
+    $i = 2;
+    
+    while ($i <= 100) {
+      if ($i % 2 == 0) {
+        echo $i;
+        echo '<br>';
+      }
+
+      $i++;
+    }
+
+  ?>
+  
+  <?php
+
+    for ($i = 1; $i <= 1000; $i++) {
+      if ($i > 500) {
+        break;
+      }
+
+      echo $i;
+      echo '<br>';
+    }
+
+  ?>
+  
+   <?php
+
+    for ($i = 1; $i <= 1000; $i++) {
+      if ($i % 3 == 0) {
+        continue;
+      }
+
+      echo $i;
+      echo '<br>';
+    }
+
+  ?>
+  
+  <?php
+
+    $scores = array('数学' => 70, '英語' => 90, '国語' => 80);
+
+    foreach ($scores as $key => $value) {
+      echo $key.'は'.$value.'点です。';
+    }
+
+  ?>
+  
+  <?php
+
+    $str = 'progate';
+
+
+    echo strlen($str);
+    echo '<br>';
+
+    $array = array('HTML', 'CSS', 'PHP');
+
+
+    echo count($array);
+    echo '<br>';
+
+    echo rand(10, 15);
+
+  ?>
+  
+  <?php
+
+    function hello() {
+      echo 'Hello, world!';
+    }
+    
+    hello();
+    
+    echo '<br>';
+
+    function printRectangleArea($height, $width) {
+      echo $height * $width;
+    }
+
+    printRectangleArea(5, 10);
+    
+  ?>
